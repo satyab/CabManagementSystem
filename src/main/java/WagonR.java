@@ -14,12 +14,12 @@ public class WagonR extends Cab {
     }
 
     @Override
-    public Location getLocation() {
-        return null;
+    public Long getRegistrationTime() {
+        return this.registrationDate;
     }
 
     @Override
-    public Long getRegistrationTime() {
-        return this.registrationDate;
+    public String getRegistrationNumber() {
+        return registrationNo;
     }
 }
