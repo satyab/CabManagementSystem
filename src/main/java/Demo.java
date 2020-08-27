@@ -23,6 +23,7 @@ public class Demo {
         BookingResult result4 = mgmt.book("BOM", "PUN", System.currentTimeMillis());
         print(result4, mgmt);
         mgmt.endTrip(result4.cabRecord);
+        print(result4, mgmt);
         mgmt.printRecords();
         /*
         mgmt.addCity("Mumbai", "BOM");

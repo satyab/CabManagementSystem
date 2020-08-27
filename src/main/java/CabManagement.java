@@ -59,7 +59,8 @@ public class CabManagement {
     public void printRecords() {
         for(Map.Entry<String, City> entry: cityCabs.entrySet()) {
             for(CabRecord record: entry.getValue().cityCatalog) {
-                System.out.println(record.toString());
+                System.out.println(record.cab);
+                System.out.println(record.records);
             }
         }
     }
