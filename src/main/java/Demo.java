@@ -15,11 +15,15 @@ public class Demo {
         print(result3, mgmt);
         mgmt.endTrip(result3.cabRecord);
         print(result3, mgmt);
-        /*
-        mgmt.registerCabs("BOM", new WagonR("001"));
-        BookingResult result3 = mgmt.book("BOM", "NSK", System.currentTimeMillis());
-        print(result3, mgmt);*/
 
+
+        mgmt.addCity("Pune", "PUN");
+        mgmt.registerCabs("BOM", new WagonR("002"));
+        mgmt.registerCabs("PUN", new WagonR("003"));
+        BookingResult result4 = mgmt.book("BOM", "PUN", System.currentTimeMillis());
+        print(result4, mgmt);
+        mgmt.endTrip(result4.cabRecord);
+        mgmt.printRecords();
         /*
         mgmt.addCity("Mumbai", "BOM");
         mgmt.addCity("Pune", "PUN");

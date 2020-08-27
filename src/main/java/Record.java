@@ -10,4 +10,9 @@ public class Record {
         this.endCityCode = endCityCode;
     }
 
+    @Override
+    public String toString() {
+        return " Start -> " + startCityCode +  " End -> " + endCityCode ;
+    }
+
 }

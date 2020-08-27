@@ -1,4 +1,3 @@
-import java.awt.print.Book;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
@@ -55,6 +54,14 @@ public class CabManagement {
 
     public void removeCab(String cityCode, CabRecord cab) {
         cityCabs.get(cityCode).cityCatalog.remove(cab);
+    }
+
+    public void printRecords() {
+        for(Map.Entry<String, City> entry: cityCabs.entrySet()) {
+            for(CabRecord record: entry.getValue().cityCatalog) {
+                System.out.println(record.toString());
+            }
+        }
     }
 
 }
